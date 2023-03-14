@@ -22,9 +22,9 @@ const CallsTableItem = ({
 }) => {
   return <div className="calls-table-item">
     <div className='calls-table-item__checkbox calls-block'></div>
-    <div className='calls-table-item__type calls-block'><IconArrow/></div>
-    <div className='calls-table-item__time calls-block'></div>
-    <div className='calls-table-item__user calls-block'></div>
+    <div className='calls-table-item__type calls-block'><IconArrow className={type}/></div>
+    <div className='calls-table-item__time calls-block'>{String(time)}</div>
+    <div className='calls-table-item__user calls-block'><img src={user} alt='no\'/></div>
     <div className='calls-table-item__call calls-block'></div>
     <div className='calls-table-item__source calls-block'></div>
     <div className='calls-table-item__mark calls-block'></div>
