@@ -17,7 +17,7 @@ const CallsTableList = ({
   const [allCheckedStatus, setAllCheckedStatus] = useState<any>(false);
 
   useEffect(() => {
-    Api.getListOfCalls('date_start=2023-03-14&date_end=2023-03-15&in_out= ')
+    Api.getListOfCalls('date_start=2023-03-12&date_end=2023-03-15&in_out= ')
       .then((response) => {
         setlistOfCalls([...response.data.results]);
         setCopyCalls([...response.data.results]);
