@@ -2,7 +2,15 @@ $color-transparent: transparent;
 $color-default-white: #fff;
 $color-default-black: #000;
 
-$ff-inter: 'Inter', 'Arial', sans-serif;
+$color-dark-blue: #091336;
+$color-main-blue: #005ff8;
+$color-green: #28a879;
+$color-warning: #ea1a4f;
+$color-light-blue: #adbfdf;
+$color-text: #122945;
+$color-yellow: #ffd500;
+
+$ff-sfpro: 'SFPro', 'Arial', sans-serif;
 
 // Viewports
 //---------------------------------
@@ -17,6 +25,6 @@ $vp--1024: 1024px;
 $vp--1246: 1246px;
 $vp--1280: 1280px;
 $vp--1440: 1440px;
-$vp--1680: 1680px;
+$vp--1690: 1690px;
 $vp--1920: 1920px;
 $vp--2560: 2560px;

@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import cn from 'classnames';
 
 const CustomSelect = ({
+  children,
   name,
   className,
   options,
@@ -11,6 +12,7 @@ const CustomSelect = ({
   handle,
   activeOpt,
 }: {
+  children: any;
   name: string;
   className: string;
   options: any;
@@ -47,7 +49,7 @@ const CustomSelect = ({
   );
 
   const changeSelect = (value: any, e: any) => {
-    handle ? handle(e) : null;
+    handle ? handle(value, e) : null;
     if (!multiple) {
       setActiveOption(value);
       setShowSelect(false);
@@ -93,6 +95,7 @@ const CustomSelect = ({
         ))}
       </select>
       <div className="select__box" onClick={(e: any) => toggleSelect(e)}>
+        {children}
         {dataSelect.length > 0 ? (
           <div className="select__list d-flex">
             {dataSelect.map((el, i) => (

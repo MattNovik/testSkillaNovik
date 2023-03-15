@@ -1,0 +1,17 @@
+.filters {
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.filters-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px;
+}

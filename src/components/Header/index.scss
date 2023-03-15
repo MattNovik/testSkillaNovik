@@ -1,0 +1,98 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-default-white;
+  box-shadow: 0px 4px 5px #e9edf3;
+  padding: 12px 120px;
+  column-gap: 20px;
+
+  @include vp--1919 {
+    padding: 20px 60px;
+  }
+
+  @include vp--1689 {
+    padding: 20px 30px;
+  }
+
+  &__date {
+    white-space: nowrap;
+    color: #899cb1;
+    font-size: 0.95rem;
+    line-height: 148%;
+    margin: 0;
+  }
+
+  &__wrapper-stats {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 56px;
+  }
+
+  &__wrapper-stats-item {
+    min-width: 156px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    font-size: 0.875rem;
+    line-height: 148%;
+
+    &--quality {
+      & .header__stats-item-counts {
+        span {
+          color: $color-yellow;
+        }
+      }
+      & .header__stats-item-row-color {
+        background-color: $color-yellow;
+      }
+    }
+
+    &--calls-count {
+      & .header__stats-item-counts {
+        span {
+          color: $color-green;
+        }
+      }
+      & .header__stats-item-row-color {
+        background-color: $color-green;
+      }
+    }
+
+    &--conversion {
+      & .header__stats-item-counts {
+        span {
+          color: $color-warning;
+        }
+      }
+      & .header__stats-item-row-color {
+        background-color: $color-warning;
+      }
+    }
+  }
+
+  &__stats-item-info {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  &__stats-item-counts {
+    display: inline-block;
+  }
+
+  &__stats-item-name {
+    color: $color-text;
+  }
+
+  &__stats-item-row {
+    display: flex;
+    width: 100%;
+    height: 6px;
+    background: #dee6f5;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}

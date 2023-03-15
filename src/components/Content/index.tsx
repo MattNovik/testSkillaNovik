@@ -7,10 +7,10 @@ const Content = ({ children }: any) => {
   return (
     <main className="main">
       <div className="main__grid d-flex">
-        <Header />
         <div className="content">
           <Sidebar />
           <div className="content__central">
+            <Header />
             <div className="content__outlet">{children}</div>
             <Footer />
           </div>

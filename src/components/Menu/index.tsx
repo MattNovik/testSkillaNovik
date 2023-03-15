@@ -29,9 +29,14 @@ const Menu = () => {
   return (
     <div className="menu">
       <ul className="menu__list">
-        {MENU_LIST.map((item: any) => (
-          <li className="menu__item">
-            <NavLink to={item.to} className="menu__link">
+        {MENU_LIST.map((item: any, index: number) => (
+          <li className="menu__item" key={index}>
+            <NavLink
+              to={item.to}
+              className={({ isActive }) =>
+                isActive ? 'menu__link menu__link--active' : 'menu__link'
+              }
+            >
               <span className="menu__link-icon">{MENU_ICONS[item.icon]}</span>
               <span className="menu__link-text">{item.name}</span>
             </NavLink>

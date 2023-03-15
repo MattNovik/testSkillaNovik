@@ -1,0 +1,11 @@
+.logo {
+  width: 100%;
+  padding: 20px 12px 32px;
+  background-color: $color-transparent;
+
+  &__link {
+    cursor: pointer;
+    width: 109px;
+    height: 28px;
+  }
+}

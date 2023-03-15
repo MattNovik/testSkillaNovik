@@ -1,0 +1,38 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 240px;
+  background-color: $color-dark-blue;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin: 0 auto;
+    padding: 13px 20px 15px;
+    background-color: $color-main-blue;
+    color: $color-default-white;
+    font-family: $ff-sfpro;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 148%;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    &:first-of-type {
+      margin: 0 auto 32px;
+    }
+
+    span {
+      width: 100%;
+      text-align: center;
+    }
+
+    svg {
+      color: rgba(216, 228, 251, 0.56);
+    }
+  }
+}

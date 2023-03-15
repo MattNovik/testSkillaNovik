@@ -1,0 +1,101 @@
+.date-balance {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 48px;
+  align-items: center;
+  margin: 20px 0;
+
+  &__balance {
+    display: flex;
+    background-color: $color-default-white;
+    border-radius: 48px;
+    padding: 8px 12px;
+    column-gap: 10px;
+    cursor: pointer;
+
+    svg {
+      color: $color-main-blue;
+    }
+
+    &:hover {
+      & .date-balance__balance-count {
+        color: $color-main-blue;
+      }
+    }
+  }
+
+  &__balance-text {
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $color-light-blue;
+
+    span {
+      line-height: 148%;
+    }
+  }
+
+  &__balance-count {
+    font-weight: 500;
+    color: $color-text;
+    transition: color 0.3s ease;
+  }
+
+  &__date {
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+    background-color: $color-transparent;
+
+    & button {
+      background-color: $color-transparent;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__date-prev,
+  &__date-next {
+    svg {
+      color: $color-light-blue;
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      svg {
+        color: $color-main-blue;
+      }
+    }
+  }
+
+  &__date-prev {
+    transform: rotate(90deg);
+  }
+
+  &__date-next {
+    transform: rotate(-90deg);
+  }
+
+  &__date-calendar {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+
+    & span {
+      color: $color-main-blue;
+    }
+
+    & svg {
+      color: $color-light-blue;
+      transition: color 0.3s ease;
+    }
+
+    &:hover {
+      svg {
+        color: $color-main-blue;
+      }
+    }
+  }
+}

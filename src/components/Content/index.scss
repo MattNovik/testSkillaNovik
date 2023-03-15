@@ -1,0 +1,24 @@
+.content {
+  display: flex;
+  min-height: 100vh;
+
+  &__central {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__outlet {
+    padding: 20px 120px;
+    background-color: #f1f4f9;
+    flex-grow: 1;
+
+    @include vp--1919 {
+      padding: 20px 60px;
+    }
+
+    @include vp--1689 {
+      padding: 20px 30px;
+    }
+  }
+}
